@@ -21,19 +21,33 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>
-					
-					<header>Header</header>
+				<section>	
+					<header>UCL PCPH</header>
 					<h1>Epidemiology Book Club</h1>
-					<h2>#1 What is Epidemiology?</h2>
+					<h2 class="fragment highlight-theme" id="postfragment">#1 What is Epidemiology?</h2>
 					<p><small>28th January 2021</small></p>
-
+					<footer><small>presented by Rini Veeravalli</small></footer>
 				</section>
 					
+				<section>
+					<h3>Overview</h3>
+					<h4>Epidemiology Book Club</h4>
+					<ol>Journal and book club</ol>
+					<h4>Gordis Epidemiology</h4>
+					<p>an introduction to epidemiology</p>
+					<ol>hi</ol>
+					<ol>for beginners</ol>
+					<h4>Chapter 1</h4>
+				</section>
 
-				<section>Slide 2</section>
+				<section>
+					<blockquote>Epide</blockquote>
 
-				<section>Slide 3</section>
+				</section>
+
+				<section>
+					Future sessions:
+				</section>
 			</div>
 		</div>
 
@@ -51,6 +65,7 @@
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
 			});
+			Reveal.addEventListener('fragmentshown', function(event) { document.getElementById("postfragment").style.color="purple";});
 		</script>
 	</body>
 </html>
